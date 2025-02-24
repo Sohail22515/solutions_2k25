@@ -118,7 +118,7 @@ const teamMembers = [
 
   },
   {
-    name: "Sitansu",
+    name: "Sitanshu",
     role: "TE MEMBER",
     image: "/team/Images/sitanshu.webp",
     linkedin: "https://www.linkedin.com/in/sitanshu-swain/",

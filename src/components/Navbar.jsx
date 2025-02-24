@@ -16,7 +16,7 @@ function Navbar() {
     navigate("/"); // Navigate to home
   };
 
-  const darkPages = ["/events", "/events/schedule", "/events/team","/events/Coding","/events/CyberSecurity","/evnets/Ev","/events/Gaming","/events/Gdxr","/events/MachineLearning","/events/openEvents","/events/Robotics"];
+  const darkPages = ["/events", "/events/schedule", "/events/team","/events/Coding","/events/CyberSecurity","/events/Ev","/events/Gaming","/events/Gdxr","/events/MachineLearning","/events/openEvents","/events/Robotics"];
   const isDarkPage = darkPages.includes(location.pathname);
 
   return (

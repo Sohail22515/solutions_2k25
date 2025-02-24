@@ -28,7 +28,7 @@ const Robotics = () => {
             <div
               key={index}
               className="card"
-              onClick={() => window.location.href = game.url} // Redirect on click
+              onClick={() => window.open(game.url, "_blank")} // Redirect on click
               style={{ cursor: 'pointer' }} // Show pointer cursor on hover
             >
               {game.name}
