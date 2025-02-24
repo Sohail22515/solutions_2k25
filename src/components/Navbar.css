@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Prevents elements from exceeding parent width */
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  /* background: #F5AE22; */
+  z-index: 1000;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Logo */
+.solutions-logo {
+  /* filter: invert(1); just need to change this */
+  height: 85px;
+  flex-shrink: 0;
+}
+
+.invert-logo {
+  filter: invert(1);
+}
+
+/* Main Navbar */
+.main-navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Nav Button */
+.nav_btn_img {
+  height: 2.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav_btn_img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.nav_btn_img:active {
+  transform: scale(0.95);
+}
+
+/* Hamburger Menu */
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Active Hamburger */
+.hamburger-button.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Navigation */
+@media (max-width: 1024px) {
+  .hamburger-button {
+    display: flex;
+  }
+
+  .main-navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 60vw; /* FIX: Ensure full width */
+    /* background-color: #F5AE22; */
+    padding: 1rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    gap: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .main-navbar a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-navbar.active {
+    display: flex;
+  }
+
+  .nav_btn_img {
+    height: 2rem;
+  }
+
+  .solutions-logo {
+    height: 55px;
+  }
+}

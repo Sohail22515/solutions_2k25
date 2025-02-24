@@ -1,0 +1,156 @@
+.events-container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.events-main {
+  position: relative;
+}
+
+.events-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/events.svg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.events-title {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  height: 100vh;
+}
+
+.blur {
+  position: absolute;
+  bottom: 8rem;
+  height: 10vh;
+  width: 100vw;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.886), black);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.event-img {
+  margin-top: 10vh;
+  width: 40%;
+}
+
+.event-grid-bg {
+  position: absolute;
+  height: 94%;
+  width: 70%;
+  margin-left: 8%;
+  background-image: url(/assets/events_grid.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Event Grid */
+.events-grid {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem; /* Increased gap for better spacing */
+  padding: 6vw;
+  margin-bottom: 30vh;
+}
+
+/* Event Cards with Alternating Layout */
+.event-card {
+  width: 440px;
+  transition-duration: 0.3s;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.event-card:nth-child(even) {
+  align-self: flex-start; /* Aligns odd-numbered items to the left */
+  margin-left: 10vw;
+}
+
+.event-card:nth-child(odd) {
+  align-self: flex-end; /* Aligns even-numbered items to the right */
+  margin-right: 10vw;
+}
+
+.event-card img {
+  width: 100%;
+  max-width: 440px;
+  display: block;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .events-grid {
+      justify-content: center;
+  }
+
+  .event-img {
+      margin-top: 10vh;
+      width: 60%;
+  }
+
+  .event-card {
+      width: 360px;
+  }
+
+  .event-card img {
+      width: 100%;
+      max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+      width: 360px;
+  }
+  
+  .event-card img {
+      width: 100%;
+      max-width: 360px;
+  }
+
+  /* On smaller screens, center all event cards */
+  .event-card:nth-child(even),
+  .event-card:nth-child(odd) {
+      align-self: center;
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .event-img {
+      margin-top: 10vh;
+      width: 80%;
+  }
+
+  .event-card {
+      width: 100%;
+      max-width: 340px;
+  }
+
+  .event-card img {
+      width: 100%;
+  }
+}

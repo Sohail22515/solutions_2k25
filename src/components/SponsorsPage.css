@@ -1,0 +1,96 @@
+/* Sponsors Page */
+.sponsors-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 10vh 0;
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-image: linear-gradient(#d61e17, #a64829);
+}
+
+/* Title */
+.sponsors-page h1 {
+  font-size: 4rem;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+/* Sponsors Section */
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 2rem;
+}
+
+/* Main Sponsor */
+.sponsor-main {
+  text-align: center;
+}
+
+.sponsor img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Sponsor Row */
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sponsors-page h1 {
+    font-size: 3rem;
+  }
+
+  .sponsor img {
+    width: 350px;
+  }
+
+  .sponsor-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .sponsor img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-page h1 {
+    font-size: 2rem;
+  }
+
+  .sponsor img {
+    width: 250px;
+  }
+}

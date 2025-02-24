@@ -1,0 +1,137 @@
+/* About Us Section */
+.about-us {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  position: relative;
+  padding: 10vh 0;
+  overflow: hidden;
+}
+
+/* Background Image */
+.about-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.98;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Section Title */
+.about-us h1 {
+  font-size: 4rem;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+/* Content Section */
+.about-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+}
+
+/* Decorative Letter Image */
+.letter-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transform-origin: left center;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Left Section (Text) */
+.about-left {
+  flex: 1;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  padding: 2rem;
+  background: rgba(113, 103, 103, 0.8);
+  border-radius: 8px;
+  transform: translateX(0); /* Ensures visibility */
+}
+
+.about-left p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Right Section (Video) */
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transform: translateX(0); /* Ensures visibility */
+}
+
+.about-right iframe {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .about-us h1 {
+    font-size: 3rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 90%;
+  }
+
+  .about-right iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-left p {
+    font-size: 1rem;
+  }
+
+  .about-right iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us h1 {
+    font-size: 2rem;
+  }
+
+  .about-left p {
+    font-size: 0.9rem;
+  }
+
+  .about-right iframe {
+    width: 100%;
+    height: 180px;
+  }
+}
