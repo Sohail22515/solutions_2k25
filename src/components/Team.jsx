@@ -3,6 +3,8 @@ import './Team.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const teamMembers = [
   {
@@ -28,7 +30,7 @@ const teamMembers = [
     role: "WebDev Lead",
     description:
       '"Dimaag kam lagata hu, code jyada krta hu!"',
-    image: "/team/Images/sohail1.jpeg",
+    image: "/team/Images/sohail2.png",
     linkedin: "https://www.linkedin.com/in/mohammad-sohail22515/",
     github:"https://github.com/Sohail22515",
     instagram: "#",
@@ -59,10 +61,18 @@ const teamMembers = [
   },
   {
     name: "Nitesh Singh",
-    role: "TE Member",
+    role: "TE MEMBER",
     image: "/team/Images/nitesh.jpg",
     linkedin: "https://www.linkedin.com/in/niteshsingh15?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/nitesh.s_15?igsh=enMweHZyNTRhc3F1",
+  },
+  {
+    name: "Sagar Kumar",
+    role: "TE MEMBER",
+    image: "/team/Images/sagar.JPG",
+    linkedin: "https://www.linkedin.com/in/sagar-kumar-212389271/",
+    instagram: "https://www.instagram.com/s.sagar.k/",
+
   },
   {
     name: "Yashwant Reddy",
@@ -101,11 +111,19 @@ const teamMembers = [
   },
   {
     name: "Krishna",
-    role: "AI Titan",
+    role: "AI Titan Member",
     image: "/team/Images/krishna.jpeg",
     linkedin: "https://www.linkedin.com/in/krishna-shankar-pandey-6375711b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/krishna.pnd?igsh=MWxxbmpoMG9jNnFucg==",
-    
+
+  },
+  {
+    name: "Sitansu",
+    role: "TE MEMBER",
+    image: "/team/Images/sitanshu.webp",
+    linkedin: "https://www.linkedin.com/in/sitanshu-swain/",
+    instagram: "https://www.instagram.com/sitanshu_sekhar16/",
+
   },
 ];
 
@@ -113,7 +131,7 @@ const MemberCard = ({ name, role, image, linkedin,github, instagram }) => (
   <div className="member_card">
     <div className="social_media">
       <a href={linkedin} target="_blank" rel="noopener noreferrer">
-        <img src="/public/team/IN.svg" alt="LinkedIn" />
+        <FaLinkedin size={35} color="white"/>
       </a>
       {github && ( // Only render if a GitHub link exists
         <a href={github} target="_blank" rel="noopener noreferrer">
@@ -121,7 +139,7 @@ const MemberCard = ({ name, role, image, linkedin,github, instagram }) => (
         </a>
       )}
       <a href={instagram} target="_blank" rel="noopener noreferrer">
-        <img src="/public/team/Insta.svg" alt="Instagram" />
+        <FaInstagram size={40} color="white"/>
       </a>
     </div>
     <div className="member_name">

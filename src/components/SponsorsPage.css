@@ -52,12 +52,12 @@
 }
 
 /* Sponsor Row */
-.sponsor-row {
+/* .sponsor-row {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -69,10 +69,10 @@
     width: 350px;
   }
 
-  .sponsor-row {
+  /* .sponsor-row {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
