@@ -16,16 +16,20 @@ function Navbar() {
     navigate("/"); // Navigate to home
   };
 
+  const darkPages = ["/events", "/events/schedule", "/events/team","/events/Coding","/events/CyberSecurity","/evnets/Ev","/events/Gaming","/events/Gdxr","/events/MachineLearning","/events/openEvents","/events/Robotics"];
+  const isDarkPage = darkPages.includes(location.pathname);
+
   return (
     <nav className="navbar">
-      <img src="/assets/logo.svg" alt="Solutions logo" 
-      // className={`solutions-logo ${location.pathname === "/events" ? "invert-logo" : ""}`} 
-      className={`solutions-logo ${location.pathname.startsWith("/events") ? "invert-logo" : ""}`} 
-        onClick={handleLogoClick}// Navigate to home on click
-        style={{ cursor: "pointer" }} // Show pointer cursor
+      <img src="/assets/logo.svg"
+        alt="Solutions logo"
+        className={`solutions-logo ${isDarkPage ? "invert-logo" : ""}`}
+        onClick={handleLogoClick}
+        style={{ cursor: "pointer" }}
       />
       
-      <div className={`hamburger-button ${menuActive ? "active" : ""}`} onClick={toggleMenu}>
+      <div className={`hamburger-button ${menuActive ? "active" : ""} ${isDarkPage ? "dark-page" : ""}`}
+        onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>

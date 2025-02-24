@@ -79,6 +79,10 @@ body, html {
   border-radius: 2px;
 }
 
+.hamburger-button.dark-page span {
+  background-color: white;
+}
+
 /* Active Hamburger */
 .hamburger-button.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
