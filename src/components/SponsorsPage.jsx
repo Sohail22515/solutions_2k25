@@ -2,9 +2,9 @@ import React from "react";
 import "./SponsorsPage.css";
 
 const sponsors = [
-  { id: 1, image: "/public/assets/accops_sponsor.svg", alt: "Sponsor 1" },
-  { id: 2, image: "/public/assets/mro_sponsor.svg", alt: "Sponsor 2" },
-  { id: 3, image: "/public/assets/mro_sponsor.svg", alt: "Sponsor 3" },
+  { id: 1, image: "/assets/accops_sponsor.svg", alt: "Sponsor 1" },
+  { id: 2, image: "/assets/mro_sponsor.svg", alt: "Sponsor 2" },
+  { id: 3, image: "/assets/mro_sponsor.svg", alt: "Sponsor 3" },
 ];
 
 const SponsorsPage = () => {

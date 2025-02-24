@@ -37,7 +37,7 @@ function Navbar() {
           <a href="/"><img className="nav_btn_img" src="/assets/home.svg" alt="home-icon" /></a>
         )}
         <a href="/events"><img className="nav_btn_img" src="/assets/about us.svg" alt="Events" /></a>
-        <a href="/events/schedule"><img className="nav_btn_img" src="/public/assets/schedule.svg" alt="Schedule" /></a>
+        <a href="/events/schedule"><img className="nav_btn_img" src="/assets/schedule.svg" alt="Schedule" /></a>
         <a href="/events/team"><img className="nav_btn_img" src="/assets/our team.svg" alt="Our-Team" /></a>
         <a href="https://unstop.com/college-fests/solutions-2k25-army-institute-of-technology-ait-pune-312122/amp" target="blank">
           <img className="nav_btn_img" src="/assets/Register.svg" alt="register" />
