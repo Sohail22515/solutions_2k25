@@ -4,7 +4,7 @@ import "./SponsorsPage.css";
 const sponsors = [
   { id: 1, image: "/assets/accops_sponsor.svg", alt: "Sponsor 1" },
   { id: 2, image: "/assets/mro_sponsor.svg", alt: "Sponsor 2" },
-  // { id: 3, image: "/assets/mro_sponsor.svg", alt: "Sponsor 3" },
+  { id: 3, image: "/assets/unstop.svg", alt: "Sponsor 3" },
 ];
 
 const SponsorsPage = () => {
@@ -19,8 +19,12 @@ const SponsorsPage = () => {
         </div>
 
         {/* Other Sponsors */}
-        <div className="sponsor">
-          <img src={sponsors[1].image} alt={sponsors[1].alt} />
+        <div className="sponsor-row">
+          {sponsors.slice(1).map((sponsor) => (
+            <div key={sponsor.id} className="sponsor">
+              <img src={sponsor.image} alt={sponsor.alt} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

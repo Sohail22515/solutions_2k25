@@ -21,7 +21,7 @@ const teamMembers = [
     role: "SECRETARY",
     description:
       '"Stalling To Thriving"',
-    image: "/team/Images/nisha.jpg",
+    image: "/team/Images/cropped-nisha.jpg",
     linkedin: "https://www.linkedin.com/in/nisha-dhaka-649971270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/blaze_x_rise?igsh=cHZ3dzk4ODlmdHFm",
   },
@@ -68,7 +68,7 @@ const teamMembers = [
   },
   {
     name: "Sagar Kumar",
-    role: "TE MEMBER",
+    role: "GAMING HEAD",
     image: "/team/Images/sagar.JPG",
     linkedin: "https://www.linkedin.com/in/sagar-kumar-212389271/",
     instagram: "https://www.instagram.com/s.sagar.k/",
@@ -124,6 +124,22 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/sitanshu-swain/",
     instagram: "https://www.instagram.com/sitanshu_sekhar16/",
 
+  },
+  {
+    name: "Vipin",
+    role: "TE MEMBER",
+    image: "/team/Images/vipin1.jpeg",
+    linkedin: "https://www.linkedin.com/in/vipin-kumar-5b70b5256/",
+    instagram: "https://www.instagram.com/iam_dhankhar01/",
+
+  },
+  {
+    name: "Nishant",
+    role: "WebDev Lead",
+    image: "/team/Images/Nishant.jpg",
+    linkedin: "http://linkedin.com/in/nishant-kumar-56aa70269/",
+    github:"https://github.com/78Nishant",
+    instagram: "https://www.instagram.com/nishantkumar_____78/",
   },
 ];
 

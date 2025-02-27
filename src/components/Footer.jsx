@@ -60,7 +60,7 @@ const Footer = () => {
             <h3>Follow us on</h3>
             <div className="social-icons">
               <a href="https://www.instagram.com/aittechnicalboard/" target="_blank"><img src="/assets/insta.svg" alt="Instagram" /></a>
-              <a href="https://www.linkedin.com/company/technical-board-ait/about/" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/company/ait-technical-board/" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" /></a>
               <a href="https://www.instagram.com/solutions.ait/" target="_blank"><img src="/assets/insta.svg" alt="solutions_IG" /></a>
               <a href="https://github.com/Sohail22515" target="_blank"><FaGithub size={20} color="white"/></a>
             </div>
