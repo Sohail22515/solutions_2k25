@@ -1,7 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef,useState } from "react";
 
 const BackgroundEffect = () => {
   const canvasRef = useRef(null);
+  const [particleCount, setParticleCount] = useState(getParticleCount());
+
+  function getParticleCount() {
+    if (window.innerWidth < 600) return 25; // Small screens
+    if (window.innerWidth < 900) return 75; // Medium screens
+    return 100; // Large screens
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -13,7 +20,7 @@ const BackgroundEffect = () => {
     canvas.height = window.innerHeight;
 
     let particles = [];
-    const particleCount = 100;
+    // const particleCount = 100;
 
     class Particle {
       constructor() {
@@ -78,7 +85,7 @@ const BackgroundEffect = () => {
         init();
       });
     };
-  }, []);
+  }, [particleCount]);
 
   return (
     <canvas
