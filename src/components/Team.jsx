@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-
+import BackgroundEffect from "./BackgroundEffect";
 const teamMembers = [
   {
     name: "NABAJIT DAS",
@@ -183,6 +183,7 @@ const Team = () => {
 
   return (
     <div className="team-page">
+      <BackgroundEffect />
       <Navbar />
       <div className="carousel">
         <div className="carousel-content">

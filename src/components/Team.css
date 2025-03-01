@@ -323,3 +323,19 @@
   max-height: 100%;
   object-fit: contain; /* Ensures images fit without stretching */
 }
+
+
+.team-page {
+  position: relative;
+  background: transparent; /* ✅ Ensure it's transparent */
+  min-height: 100vh;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Push it behind all content */
+}
