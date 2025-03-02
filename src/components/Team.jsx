@@ -29,7 +29,7 @@ const teamMembers = [
     name: "SOHAIL",
     role: "WebDev Lead",
     description:
-      '"Dimaag kam lagata hu, code jyada krta hu!"',
+      '"Every thing has Rhythm"',
     image: "/team/Images/sohail22.png",
     linkedin: "https://www.linkedin.com/in/mohammad-sohail22515/",
     github:"https://github.com/Sohail22515",
