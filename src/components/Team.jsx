@@ -30,7 +30,7 @@ const teamMembers = [
     role: "WebDev Lead",
     description:
       '"Dimaag kam lagata hu, code jyada krta hu!"',
-    image: "/team/Images/sohail2.png",
+    image: "/team/Images/sohail22.png",
     linkedin: "https://www.linkedin.com/in/mohammad-sohail22515/",
     github:"https://github.com/Sohail22515",
     instagram: "#",
