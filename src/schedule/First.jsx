@@ -5,61 +5,53 @@ import Footer from "../components/Footer";
 
 const First = () => {
     // State to track the selected date
-    const [selectedDate, setSelectedDate] = useState("19th Mar");
+    const [selectedDate, setSelectedDate] = useState("3rd April");
 
     // Event data for different dates
     const eventData = {
-        "19th Mar": [
-            { name: "Imaginate", time: "Begins - 12:00AM" },
-            { name: "Arcade", time: "Begins - 12:00AM" },
-            { name: "Valorant", time: "10:30AM to 6:00PM" },
-            { name: "Placement Apti", time: "11:00AM - 11:30PM" },
-            { name: "She Code", time: "4:30PM - 5:30PM" },
-            { name: "Photography", time: "Deadline - 11:50PM" },
-            { name: "Movie Making", time: "Deadline - 11:50PM" }
+        "3rd April": [
+            { name: "AR-CADE", time: "10:00AM to 1:00PM",venue:"RH" },
+            { name: "Imaginate", time: "3:00PM t0 6:00PM",venue:"RH" },
+            { name: "CrackHunt", time: "2:00PM to 5:00PM",venue:"Manekshaw" },
+            { name: "CSS Battle", time: "Begins- 11:00AM",venue:"Online" },
+            { name: "Solidworks", time: "11:00AM to 2:00PM",venue:"Online" },
+            { name: "Photography", time: "Deadline- 11:00PM",venue:"Online" },
+            { name: "Movie Making", time: "Deadline- 11:00PM",venue:"Online" },
+            { name: "TrainIT", time: "",venue:"Online" },
+            { name: "Valorant", time: "",venue:"Online" },
+            { name: "BGMI", time: "",venue:"RH" },
+            { name: "Innovex", time: "",venue:"NCH" },
+            { name: "Ethon", time: "10:00AM to 1:00PM",venue:"Manekshaw" },
+            
         ],
-        "20nd Mar": [
-            { name: "Valorant", time: "10:00AM - 6:00PM" },
-            { name: "BGMI", time: "10:00AM - 6:00PM"},
-            { name: "Project Jupyter", time: "Begins - 10:00AM" },
-            { name: "Quiziotics", time: "10:00AM - 11:00MP" },
-            { name: "Ethon", time: "Begins - 11:00AM" },
-            { name: "Robo Race", time: "11:30AM - 1:00PM" },
-            { name: "Maze Runner", time: "1:00AM - 2:30PM" },
-            { name: "Robo Clench", time: "4:00PM to 5:00PM" },
-            { name: "Techstorm", time: "5:30AM to 6:00PM" },
-            { name: "Flash 500", time: "Deadline - 11:50PM" },
+        "4th April": [
+            { name: "SheCode", time: "12:00AM to 2:00PM",venue:"RH" },
+            { name: "CodeRed", time: "4:00PM to 6:00PM",venue:"RH" },
+            { name: "Prompt Painter", time: "Begins- 11:00AM",venue:"Online" },
+            { name: "Jupyter", time: "Begins- 10:00AM",venue:"Online" },
+            { name: "B Plan", time: "Begins- 11:00AM",venue:"Online" },
+            { name: "Placement Apti", time: "10:00AM to 1:00AM",venue:"Online" },
+            { name: "DriveLink", time: "10:00AM to 12:00PM",venue:"EV lab" },
+            { name: "CiruitCraft", time: "2:00PM to 4:00PM",venue:"RH" },
         ],
-        "21th Mar": [
-            { name: "Valorant", time: "10:00AM - 6:00PM" },
-            { name: "Model Making", time: "8:00AM - 12:30PM"},
-            { name: "Project Jupyter", time: "Deadline - 10:00PM" },
-            { name: "CrackHunt", time: "9:00AM - 12:000PM" },
-            { name: "SolidWorks", time: "10:30AM - 1:00PM" },
-            // { name: "Session", time: "11:30AM - 1:00PM" },
-            { name: "ByPass CTF", time: "Begins - -12:00PM" },
-            { name: "Robo Soccer", time: "3:00PM to 5:00PM" },
-            // { name: "Techstorm", time: "5:30AM to 6:00PM" },
-            { name: "Drone Drag", time: "5:30PM - 7:30PM" },
+        "5th April": [
+            { name: "Solvex", time: "Begins- 11:00AM",venue:"Aryabhatta" },
+            { name: "Bypass CTF", time: "",venue:"Online" },
+            { name: "Techstorm", time: "12:00PM to 1:00PM",venue:"Online" },
+            { name: "Cyber Security Quiz", time: "",venue:"Online" },
+            { name: "Gate-ronics", time: "11:00AM to 12:00PM",venue:"Online" },
+            { name: "Dataviz", time: "",venue:"Online" },
+            { name: "Current Clash", time: "10:00AM to 1:00PM",venue:"Manekshaw" },
+            { name: "Wartech", time: "",venue:"RH" },
+            { name: "Mystery Box", time: "",venue:"ME classroom" },
         ],
-        "22nd Mar": [
-            { name: "Drive Link", time: "Begins - -10:00AM" },
-            { name: "Shortest Code", time: "3:30AM - 5:30PM"},
-            { name: "How Unicorn", time: "Begins - 3:00PM" },
-            { name: "Dron Racing", time: "Begins - 2:00PM" },
-            { name: "Circuit Craft", time: "3:00PM" },
-            { name: "Cybersecurity quiz", time: "3:30AM - 4:00PM" },
-            { name: "Maze Runner", time: "4:00PM - 5:00PM" },
-            { name: "Robo wars", time: "5:30PM to 6:30PM" },
+        "6th April": [
+            { name: "Solvex", time: "",venue:"Aryabhatta" },
+            { name: "Speaker Session", time: "Begins- 2:00PM",venue:"Manekshaw" },
+            { name: "Model Making", time: "Begins- 2PM",venue:"Aryabhatta" },
+            { name: "Wartech", time: "",venue:"" },
         ],
-        "23rd Mar": [
-            { name: "ByPass CTF", time: "Deadline - 12:00AM" },
-            { name: "Current Clash", time: "Begins - 10:00AM"},
-            { name: "Robo Clench", time: "4:00PM - 5:00PM" },
-            { name: "Rusty Wheels", time: "5:30PM - 6:30PM" },
-            { name: "Imaginate", time: "Deadline - 11:50PM" },
-            { name: "Arcade", time: "Deadline - 11:50PM" }
-        ],
+       
     };
 
     // Get the events for the selected date
@@ -91,6 +83,7 @@ const First = () => {
                             <div key={index} className="card2">
                                 <h4>{game.name}</h4>
                                 <p>{game.time}</p>
+                                <b>{game.venue}</b>
                             </div>
                         ))
                     ) : (
