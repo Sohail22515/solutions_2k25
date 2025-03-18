@@ -7,7 +7,7 @@ const Coding = () => {
 
   const games = [
     { name: "REGISTER HERE", url: "https://unstop.com/competitions/solvex-solutions-2k25-army-institute-of-technology-ait-pune-1406713" },
-    { name: "RULE BOOK", url: "https://drive.google.com/file/d/13fKNNZ5DKzNYHPbYjUzKJwWF9nqrEHBL/view?usp=drivesdk" },
+    { name: "RROBLEM STATEMENT", url: "https://drive.google.com/file/d/13fKNNZ5DKzNYHPbYjUzKJwWF9nqrEHBL/view?usp=drivesdk" },
     
   ];
 
