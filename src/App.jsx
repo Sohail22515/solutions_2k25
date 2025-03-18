@@ -10,6 +10,7 @@ import CyberSecurity from "./fields/CyberSecurity";
 import Gdxr from "./fields/Gdxr";
 import MachineLearning from "./fields/MachineLearing";
 import Ev from "./fields/Ev";
+import Solvex from "./fields/Solvex";
 
 import First from "./schedule/First";
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/events/gdxr" element={<Gdxr/>} />
           <Route path="/events/machineLearning" element={<MachineLearning/>} />
           <Route path="/events/ev" element={<Ev/>} />
+          <Route path="/events/solvex" element={<Solvex/>} />
           <Route path="/events/schedule" element={<First />} />
           {/* Wrap only the Team component with Suspense */}
           <Route

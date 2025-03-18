@@ -9,7 +9,7 @@ const Events = () => {
   const navigate = useNavigate();
 
   const eventCategories = [
-    { name: "/assets/Gaming.svg", slug: "Gaming" },
+    { name: "/assets/solvex.svg", slug:"Solvex"},
     // { name: "/assets/Gaming3.svg" },
     // { name: "/assets/Gaming4.svg" },
     { name: "/assets/CodingEvents.svg", slug: "Coding" },
@@ -25,6 +25,8 @@ const Events = () => {
     { name: "/assets/ML.svg", slug: "MachineLearning" },
     
     { name: "/assets/EV.svg", slug: "Ev" },
+
+    { name: "/assets/Gaming.svg", slug: "Gaming"},
   ];
 
   return (
