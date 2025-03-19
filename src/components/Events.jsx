@@ -16,7 +16,7 @@ const Events = () => {
     
     { name: "/assets/OpenEvents.svg", slug: "openEvents" },
     
-    { name: "/assets/Robotics.svg", slug: "Robotics" },
+    {name: "/assets/fusion.svg", slug:"fusion"},
     
     { name: "/assets/CyberSec.svg", slug: "CyberSecurity" },
     
@@ -27,6 +27,8 @@ const Events = () => {
     { name: "/assets/EV.svg", slug: "Ev" },
 
     { name: "/assets/Gaming.svg", slug: "Gaming"},
+
+    { name: "/assets/Robotics.svg", slug: "Robotics" },
   ];
 
   return (
