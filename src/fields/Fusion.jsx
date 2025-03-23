@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const Coding = () => {
 
   const games = [
-    { name: "INNOVX", url: "https://unstop.com/competitions/innovx-solutions-2k25-army-institute-of-technology-ait-pune-1433456" },
+    { name: "INOVEX", url: "https://unstop.com/competitions/innovx-solutions-2k25-army-institute-of-technology-ait-pune-1433456" },
     { name: "MYSTERY BOX", url: "https://unstop.com/competitions/mystery-box-army-institute-of-technology-ait-pune-1434603" },
     
   ];
